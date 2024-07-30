@@ -1,13 +1,5 @@
 app:
-  applicationId: 77501689-6975-43be-a9a4-ad88ded86f03 # (required)
-  env: ${HAWK_ENV:Development} # (required)
+  applicationId: f84b2de3-0935-4736-9491-71441429a8dd # (required)
+  env: Pre-Production # (required)
   host: http://localhost:3000 # (required)
 
-hawk:
-  failureThreshold: high
-
-tags:
-  - name: _STACKHAWK_GIT_COMMIT_SHA
-    value: ${COMMIT_SHA:}
-  - name: _STACKHAWK_GIT_BRANCH
-    value: ${GITHUB_HEAD_REF:}
