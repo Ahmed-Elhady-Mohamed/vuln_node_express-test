@@ -14,4 +14,6 @@ jobs:
           node-version: 14.x
       - name: Instal dependaencies
         run: npm clean-install
+      - name: Run App
+        run: nohup npm run start &
       
