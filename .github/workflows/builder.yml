@@ -16,4 +16,7 @@ jobs:
         run: npm clean-install
       - name: Run App
         run: nohup npm run start &
-      
+      - name: run stackhawk
+        uses: stackhawk/hawkscan-action@v2.2.0
+        with:
+          apiKey: ${{ secrets.HAWK_API_KEY }}
