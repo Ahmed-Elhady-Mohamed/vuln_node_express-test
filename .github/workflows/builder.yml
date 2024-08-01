@@ -6,6 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
+      - name: Install Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
       - name: Check out Code
         uses: actions/checkout@v2
       - name: Install node JS 14.x
